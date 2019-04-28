@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Person from './Person/Person';
 
-const app = props => {
+const App = props => {
 const [ personsState, setPersonState ]= useState ({
   persons:[
     {name:"Ashu", age:25},
@@ -29,7 +29,7 @@ const [ personsState, setPersonState ]= useState ({
    <div className="App">
    <h1> Hi, I am React App</h1>
    <p> Working</p>
-   <button onClick={this.switchNameHandler}>Switch Name</button>
+   <button onClick={switchNameHandler}>Switch Name</button>
    <Person name= {personsState.persons[0].name} age={personsState.persons[0].age}/>
    <Person name= {personsState.persons[1].name}  age={personsState.persons[1].age}> My Hobbies: TV </Person>
    <Person name= {personsState.persons[2].name} age={personsState.persons[2].age}/>
@@ -38,6 +38,7 @@ const [ personsState, setPersonState ]= useState ({
   
 //return React.createElement('div', {className:'App'}, React.createElement('h1','null','does it works'))
 }
-}
 
-export default app;
+
+
+export default App;
